@@ -14,24 +14,10 @@ body {
     /*height: 100%;*/
 }
 
-
 /* CSS only for examples not required for centering */
 
 .container {
     height: 100%;
-}
-
-li.menu-seleccion:hover:before {
-    display: inline-block;
-    margin-left: -1.3em;
-    width: 1.3em;
-    margin-top: 5px;
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 2px;
-    box-shadow: 2px 2px, 4px 2px, 2px 4px, 4px 4px, 6px 4px, 8px 4px, 2px 6px, 4px 6px, 6px 6px, 8px 6px, 10px 6px, 2px 8px, 4px 8px, 6px 8px, 8px 8px, 10px 8px, 12px 8px, 2px 10px, 4px 10px, 6px 10px, 8px 10px, 10px 10px, 2px 12px, 4px 12px, 6px 12px, 8px 12px, 2px 14px, 4px 14px;
-    color: #fff;
 }
 
 li {
@@ -45,18 +31,9 @@ a:hover {
     text-decoration: none;
 }
 
-.position-list-icon {
-    top: 10px;
-}
-
 .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
-}
-
-.pick-one {
-    min-height: 300px;
-    font-size: 20px;
 }
 
 .paper{
@@ -66,6 +43,11 @@ a:hover {
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding: 2rem;
+    padding-top: 50px;
+}
+
+.paper > div{
+    font-size: 12px;
 }
 
 .exit{
@@ -74,84 +56,6 @@ a:hover {
     height: 45px;
 }
 
-.nes-icon.twitter::before {
-    content: "";
-}
-
-.nes-icon.github::before {
-    content: "";
-}
-
-.nes-icon.linkedin::before {
-    content: "";
-}
-
-.nes-icon.heart::before {
-    content: "";
-}
-
-.nes-icon.star::before {
-    content: "";
-}
-
-.nes-icon.trophy::before {
-    content: "";
-}
-
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-    padding-left: 30px !important;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 15px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline > li > .coin {
-    position: absolute;
-    border-radius: 50%;
-    left: 0px;
-    z-index: 400;
-}
-
-ul.timeline > li > .trophy {
-    position: absolute;
-    border-radius: 50%;
-    left: 0px;
-    z-index: 400;
-}
-
-.porcentaje{
-    width: 4.7em !important;
-    font-size: 0.9em !important;
-    top: -2.9em !important;
-    left: -1.5em !important;
-}
-
-.tecnologia{
-    font-size: 1.4em !important;
-    width: 100% !important;
-}
-
-/*
-.nes-badge.is-icon {
-    width: 10.5em;
-}
-
-.nes-badge{
-    height: 4.875em !important;
-}*/
-
-.skill-margin{
-    margin-bottom: 40px;
+h5{
+    margin-top: 30px;
 }

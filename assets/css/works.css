@@ -1,0 +1,18 @@
+.col {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+p {
+    word-break: break-word;
+}
+
+.nes-badge.is-icon {
+    width: 100%;
+}
+
+img{
+    height: 180px; 
+    width: 100%; 
+    display: block;
+}
