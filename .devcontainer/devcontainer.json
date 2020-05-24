@@ -1,0 +1,12 @@
+{
+    "name": "alexsanro",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "alexsanro",
+    "workspaceFolder": "/app",
+    "shutdownAction": "stopCompose",
+    "settings": {
+        "files.associations": {
+            "[Dd]ockerfile*": "dockerfile"
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.col {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+li>.nes-container>p {
+    word-break: break-word;
+}
+
+.nes-badge.is-icon {
+    width: 100%;
+}
+
+.timeline>li>.nes-container{
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+.timeline>li>.nes-container>.col{
+    padding-left: 0px; 
+    margin-bottom: 10px;
+}
+
+.empresa{
+    font-size: 9px; color:gray; 
+}
+
+.nes-icon.star::before {
+    content: "";
+}
+
+.nes-icon.trophy::before {
+    content: "";
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px !important;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li > .coin {
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    z-index: 400;
+}
+
+ul.timeline > li > .trophy {
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    z-index: 400;
+}
+
+.porcentaje{
+    width: 4.7em !important;
+    font-size: 0.9em !important;
+    top: -2.9em !important;
+    left: -1.5em !important;
+}
+
+.tecnologia{
+    font-size: 1.4em !important;
+    width: 100% !important;
+}
+
+.skill-margin{
+    margin-bottom: 40px;
+}

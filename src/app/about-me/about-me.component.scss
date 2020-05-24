@@ -1,0 +1,31 @@
+.position-list-icon {
+    top: 10px;
+}
+
+.nes-icon.twitter::before {
+    content: "";
+}
+
+.nes-icon.github::before {
+    content: "";
+}
+
+.nes-icon.linkedin::before {
+    content: "";
+}
+
+.nes-icon.heart::before {
+    content: "";
+}
+
+.heart{
+    margin-right: 3px !important;
+}
+
+.social_links{
+    text-align: center;
+    
+    .link_icon{
+        margin-right: 10px;
+    }
+}

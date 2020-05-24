@@ -1,0 +1,67 @@
+[
+    {
+        "name": "PHP",
+        "value": 80,
+        "type": "web"
+    },
+    {
+        "name": "MYSQL",
+        "value": 55,
+        "type": "database"
+    },
+    {
+        "name": "HTML55",
+        "value": 100,
+        "type": "web"
+    },
+    {
+        "name": "SCRUM",
+        "value": 65,
+        "type": "others"
+    },
+    {
+        "name": "Jquery",
+        "value": 80,
+        "type": "frameworks"
+    },
+    {
+        "name": "SQL",
+        "value": 35,
+        "type": "database"
+    },
+    {
+        "name": "Codeigniter",
+        "value": 70,
+        "type": "frameworks"
+    },
+    {
+        "name": "Laravel",
+        "value": 25,
+        "type": "frameworks"
+    },
+    {
+        "name": "Git",
+        "value": 55,
+        "type": "others"
+    },
+    {
+        "name": "Jenkins",
+        "value": 30,
+        "type": "others"
+    },
+    {
+        "name": "NodeJs",
+        "value": 20,
+        "type": "web"
+    },
+    {
+        "name": "ElectronJS",
+        "value": 30,
+        "type": "desktop"
+    },
+    {
+        "name": "Javascript",
+        "value": 70,
+        "type": "web"
+    }
+]
