@@ -28,4 +28,9 @@ export class AboutMeComponent implements OnInit {
       this.displayContactDiv = true;
     }  
   }
+
+  openCurriculum(){
+    window.open('../../assets/documentos/alejandro_dos_santos_rojo_cv.pdf', '_blank');
+  }
+
 }
