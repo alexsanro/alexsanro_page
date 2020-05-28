@@ -16,6 +16,7 @@
                         conocimientos sobre Javascript.
                         También aprendo un poco de Godot para enfrascarme en el mundo de la creación del videojuego poco
                         a poco.</p>
+                    <div class="contact" *ngIf="displayContactDiv">
                         <ul class="nes-list">
                             <li>
                                 <i class="nes-icon user position-list-icon"></i>Alejandro Dos Santos Rojo
@@ -27,12 +28,14 @@
                                 <i class="nes-icon envelope position-list-icon"></i>alexsanro1@gmail.com
                             </li>
                         </ul>
+                    </div>
+
                 </div>
-                
+
             </div>
 
             <div class="row row_contact_hobbies">
-                <div class="col-xl-12 sm-12 col-md-12 contact">
+                <div class="col-xl-12 sm-12 col-md-12 contact" *ngIf="!displayContactDiv">
                     <ul class="nes-list">
                         <li>
                             <i class="nes-icon user position-list-icon"></i>Alejandro Dos Santos Rojo
