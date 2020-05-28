@@ -11,13 +11,15 @@ import { ResumenComponent } from './resumen/resumen.component';
 import { ResumenModule } from './resumen/resumen.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsModule } from './projects/projects.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     AboutMeComponent,
-    ResumenComponent
+    ResumenComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
