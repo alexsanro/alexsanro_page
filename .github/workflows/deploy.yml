@@ -14,3 +14,20 @@ jobs:
       uses: actions/setup-node@v1 #this installs node and npm for us
       with:
         node-version: '12.x'
+    - name: Cache npm
+      uses: actions/cache@v1 # this allows for re-using node_modules caching, making builds a bit faster.
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-    
+    - name: Build
+      run: |
+        npm ci
+        npm run build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
