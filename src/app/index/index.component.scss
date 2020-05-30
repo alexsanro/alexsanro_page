@@ -1,0 +1,41 @@
+::ng-deep body {
+    height: 100%;
+}
+
+::ng-deep html {
+    height: 100%;
+}
+
+.pick-one {
+    min-height: 300px;
+    font-size: 20px;
+}
+
+.pick-one > p {
+    font-size: 20px;
+}
+
+.pick-one > div {
+    height: 230px;
+}
+
+.list-take{
+    list-style:none; 
+    margin:0px;
+     padding: 0px; 
+     margin: auto; 
+     text-align: left;
+}
+
+.menu-seleccion:hover:before {
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    margin-top: 5px;
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 2px, 4px 2px, 2px 4px, 4px 4px, 6px 4px, 8px 4px, 2px 6px, 4px 6px, 6px 6px, 8px 6px, 10px 6px, 2px 8px, 4px 8px, 6px 8px, 8px 8px, 10px 8px, 12px 8px, 2px 10px, 4px 10px, 6px 10px, 8px 10px, 10px 10px, 2px 12px, 4px 12px, 6px 12px, 8px 12px, 2px 14px, 4px 14px;
+    color: #fff;
+}
