@@ -25,6 +25,7 @@ jobs:
       run: |
         npm ci
         npm run build_deploy
+        cp  dist/app/index.html dist/app/404.html
     - name: Install SSH Client
       uses: webfactory/ssh-agent@v0.2.0
       with:
@@ -33,5 +34,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         SSH: true
-        BRANCH: gh-pages
+        BRANCH: master
         FOLDER: dist/app
+        REPOSITORY_NAME: alexsanro/alexsanro.github.io
+        TARGET_FOLDER: .
