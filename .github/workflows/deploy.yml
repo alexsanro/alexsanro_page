@@ -36,5 +36,4 @@ jobs:
         BRANCH: master
         FOLDER: dist
         REPOSITORY_NAME: alexsanro/alexsanro.github.io
-        TARGET: .
-        
+        TARGET_FOLDER: .
