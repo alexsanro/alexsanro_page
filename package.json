@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
-    "build_deploy": "ng build --prod --base-href 'https://alexsanro.github.io/'",
+    "build_deploy": "ng build --prod --base-href 'https://alexsanro.github.io/portfolio/'",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
