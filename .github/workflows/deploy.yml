@@ -25,7 +25,7 @@ jobs:
       run: |
         npm ci
         npm run build_deploy
-        cp  dist/app/index.html dist/app/404.html
+        cp ./dist/app/index.html ./dist/app/404.html
     - name: Install SSH Client
       uses: webfactory/ssh-agent@v0.2.0
       with:
