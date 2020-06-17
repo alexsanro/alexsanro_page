@@ -3,7 +3,7 @@ name: Deploy alexsanro page's
 on:
   push:
     branches:
-      - feature/deploy
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
