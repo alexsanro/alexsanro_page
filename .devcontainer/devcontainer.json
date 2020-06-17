@@ -1,7 +1,7 @@
 {
-    "name": "alexsanro",
+    "name": "alexsanro_portfolio",
     "dockerComposeFile": ["docker-compose.yml"],
-    "service": "alexsanro",
+    "service": "alexsanro_portfolio",
     "workspaceFolder": "/app",
     "shutdownAction": "stopCompose",
     "settings": {
