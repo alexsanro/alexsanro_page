@@ -51,6 +51,6 @@ jobs:
       with:
         SSH: true
         BRANCH: master
-        FOLDER: dist/app
+        FOLDER: app
         REPOSITORY_NAME: alexsanro/alexsanro.github.io
         TARGET_FOLDER: .
