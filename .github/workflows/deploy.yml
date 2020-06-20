@@ -1,3 +1,5 @@
+name: Deploy alexsanro page's
+
 on:
   push:
     branches:
@@ -24,28 +26,11 @@ jobs:
         npm ci
         npm run build_deploy
         cp ./dist/app/index.html ./dist/app/404.html
-    - name: Upload build
-      uses: actions/upload-artifact@v1
-      with:
-        name: angular_alexsanro_portoflio
-        path: dist
     - name: Install SSH Client
       uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.DEPLOY_KEY }}
-    - name: Dowload artifcat
-      uses: actions/download-artifact@v1
-      with:
-        name: angular_alexsanro_portoflio
-    - name: Print the final result
-      shell: bash
-      run: |
-        ls -la
-        cd angular_alexsanro_portoflio
-        ls -la
-        cd app
-        ls -la
-    - name: Deploy to Repository
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         SSH: true
@@ -53,3 +38,4 @@ jobs:
         FOLDER: dist/app
         REPOSITORY_NAME: alexsanro/alexsanro.github.io
         TARGET_FOLDER: .
+        
