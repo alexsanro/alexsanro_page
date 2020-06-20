@@ -46,6 +46,10 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: angular_alexsanro_portoflio
+    - name: Print the final result
+      shell: bash
+      run: |
+        ls -la
     - name: Deploy to Repository
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
