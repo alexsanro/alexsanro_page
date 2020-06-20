@@ -50,6 +50,10 @@ jobs:
       shell: bash
       run: |
         ls -la
+        cd angular_alexsanro_portoflio
+        ls -la
+        cd app
+        ls -la
     - name: Deploy to Repository
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
