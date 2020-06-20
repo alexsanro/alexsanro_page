@@ -50,6 +50,6 @@ jobs:
       with:
         SSH: true
         BRANCH: master
-        FOLDER: angular_alexsanro_portoflio/app
+        FOLDER: dist/app
         REPOSITORY_NAME: alexsanro/alexsanro.github.io
         TARGET_FOLDER: .
