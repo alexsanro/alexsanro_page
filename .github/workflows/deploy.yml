@@ -62,3 +62,5 @@ jobs:
         FOLDER: angular_alexsanro_portoflio/app
         REPOSITORY_NAME: alexsanro/alexsanro.github.io
         TARGET_FOLDER: .
+      run: |
+        ls -la
