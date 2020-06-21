@@ -1,0 +1,21 @@
+name: Bump version
+on:
+  push:
+    branches:
+      - feature/workflow_release
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: '0'
+    - name: Get version
+      run: |
+        VERSION=$(npm run env | grep npm_package_version | cut -d '=' -f 2)
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@1.17.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true
+        CUSTOM_TAG: ${VERSION}
