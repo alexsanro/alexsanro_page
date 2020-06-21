@@ -19,3 +19,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
         CUSTOM_TAG: "1.2.2"
+        RELEASE_BRANCHES: feature/*
