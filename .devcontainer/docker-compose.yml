@@ -1,10 +1,10 @@
 version: '3.7'
 services:
-  alexsanro:
+  alexsanro_portfolio:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: alexsanro
+    container_name: alexsanro_portfolio
     tty: true
     ports:
       - "4200:4200"

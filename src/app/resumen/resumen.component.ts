@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { observable, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-resumen',
@@ -10,7 +11,9 @@ import { observable, Observable } from 'rxjs';
 export class ResumenComponent implements OnInit {
   jsonSkills = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private titleService: Title){ 
+    this.titleService.setTitle("@lexsanro / Resumen");
+  }
 
   ngOnInit(): void {
     this.skills.subscribe(data => {
