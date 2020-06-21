@@ -1,0 +1,63 @@
+.position-list-icon {
+    top: 10px;
+}
+
+.nes-icon.twitter::before {
+    content: "";
+}
+
+.nes-icon.github::before {
+    content: "";
+}
+
+.nes-icon.linkedin::before {
+    content: "";
+}
+
+.nes-icon.heart::before {
+    content: "";
+}
+
+.heart{
+    margin-right: 3px !important;
+}
+
+.social_links{
+    text-align: center;
+    
+    .link_icon{
+        margin-right: 10px;
+    }
+}
+
+.about_me{
+    margin-top: 20px;
+}
+
+.lists{
+    h5{
+        margin-top: 0px;
+    }
+}
+
+.row_contact_hobbies{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact{
+    ul{
+        padding-left: 0px;
+    }
+    margin-bottom: 10px;
+}
+
+.hobbies{
+    ul{
+        padding-left: 20px;
+    }
+}
+
+img{
+    margin-bottom: 10px;
+}
