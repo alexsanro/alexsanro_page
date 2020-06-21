@@ -1,13 +1,7 @@
 name: Create releases
 on:
-  push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - 'v3.722.2' # Push events to matching v*, i.e. v1.0, v20.15.10
-      - 'v*'
   create:
     tags:
-      - 'v3.722.2'
       - 'v*'
 jobs:
   build:
@@ -17,14 +11,17 @@ jobs:
       uses: actions/checkout@v2
       with:
         TOKEN: ${{secrets.DEPLOY_ACCESS_KEY}}
+    - name: Get tag
+      id: tag
+      uses: dawidd6/action-get-tag@v1
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.DEPLOY_ACCESS_KEY }} # This token is provided by Actions, you do not need to create your own token
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        tag_name: ${{steps.tag.outputs.tag}}
+        release_name: Release ${{steps.tag.outputs.tag}}
         body: |
           Changes in this Release
           - First Change
