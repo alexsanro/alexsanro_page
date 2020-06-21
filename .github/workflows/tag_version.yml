@@ -17,5 +17,5 @@ jobs:
       uses: anothrNick/github-tag-action@1.17.2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CUSTOM_TAG: "v1.75.2"
+        CUSTOM_TAG: v1.75.2
         RELEASE_BRANCHES: feature/*
