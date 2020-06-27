@@ -16,3 +16,44 @@ img{
     width: 100%; 
     display: block;
 }
+
+.dot {
+    margin-right: 4px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.star:before{
+    content: url('/assets/star.svg');
+    vertical-align: -0.125em;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+.watch:before{
+    content: url('/assets/watch.svg');
+    vertical-align: -0.125em;
+    margin-right: 3px;
+}
+
+.project_card{
+    padding-right: 17px;
+    padding-left: 17px;
+    margin: 20px;
+    p.description{
+        min-height: 125px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    p.title{
+        margin-bottom: 0px;
+        color:#2700ff;
+    }
+}
+
+.projects{
+    margin-top: 30px;
+}

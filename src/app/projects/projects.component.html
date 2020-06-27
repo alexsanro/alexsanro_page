@@ -6,32 +6,20 @@
             </div>
             <h1>Proyectos</h1>
 
-            <div class="nes-container is-rounded row" style="margin-bottom: 20px;">
-                <div class="col-xl-3">
-                    <img src="../assets/chuck_norris.png" class="img-fluid" alt="100%x250">
-                </div>
-                <div class="col-xl-9">
-                    <b><p><a target="_blank" href="https://github.com/alexsanro/chuck_norris_notifications">Chuck Norris notification</a></p></b><br><br>
-                    <p>
-                        Aplicación de escritorio para Windows 10 cuya funcion es mostrar mediante notificaciones frases famosas
-                        sobre Chuck Norris haciendo uso de una API pública. 
+            <div class="row justify-content-center projects">
+                <div *ngFor="let repo of repos"
+                    class="nes-container is-rounded col-lg-5 col-md-5 col-sm-12 project_card">
+                    <b>
+                        <p class="title"><a target="_blank" href="{{repo.archive_url}}">{{repo.name}}</a></p>
+                    </b>
+                    <p class="description">
+                        {{repo.description}}
                     </p>
-                    <div>
-                        <progress class="nes-progress is-success" value="80" max="100"></progress>
-                    </div>
-                </div>
-            </div>
-            <div class="nes-container is-rounded row" style="margin-bottom: 20px;">
-                <div class="col-xl-3">
-                    <img src="../assets/equis.png" class="img-fluid" alt="100%x250">
-                </div>
-                <div class="col-xl-9">
-                    <b><p><a target="_blank" href="https://github.com/alexsanro/vhost_editor_windows">Vhost editor</a></p></b><br><br>
-                    <p>
-                        Aplicación de escritorio de Windows para editar su archivo Vhost. Permite, guardar, editar y modificar dicho archivo (host / ip).
-                    </p>
-                    <div>
-                        <progress class="nes-progress is-success" value="60" max="100"></progress>
+                    <div class="stats">
+                        <span class="dot"
+                            style="background-color:{{languages_colors[repo.language]}}"></span>{{repo.language}}
+                        <span class="watch">{{repo.watchers}}</span>
+                        <span class="star">{{repo.stargazers_count}}</span>
                     </div>
                 </div>
             </div>
