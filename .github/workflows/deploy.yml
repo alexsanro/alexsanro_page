@@ -67,11 +67,12 @@ jobs:
       with:
         persist-credentials: false
         token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Get version
+      run: |
+        echo "VERSION=$(npm run env | grep npm_package_version | cut -d '=' -f 2)" >> $VERSION
     - name: Create Release
       uses: alice-biometrics/release-creator/@v1.0.4
-      env: 
-        VERSION: $(npm run env | grep npm_package_version | cut -d '=' -f 2) 
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        version: 'v2.0.0'
+        version: v${{ env.VERSION }}
         description: "[Bumped Version] ${{ env.VERSION }}"
