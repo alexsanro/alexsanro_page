@@ -75,4 +75,5 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         version: v${{ env.VERSION }}
+        repo: 'alexsanro/portfolio'
         description: "[Bumped Version] ${{ env.VERSION }}"
