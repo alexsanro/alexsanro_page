@@ -34,6 +34,8 @@ jobs:
           path: dist
   deploy:
     runs-on: ubuntu-latest
+    env:
+      VERSION: Mon
     needs: build
     steps:
     - name: Checkout 🛎️
@@ -45,7 +47,7 @@ jobs:
       with:
         name: angular_alexsanro_portoflio
     - name: Install SSH Client
-      uses: webfactory/ssh-agent@v0.2.0
+      uses: webfactory/ssh-agent@v0.5.2
       with:
         ssh-private-key: ${{ secrets.DEPLOY_KEY }}
     - name: Deploy to Repository
@@ -67,15 +69,11 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Get version
       run: |
-        VERSION=$(npm run env | grep npm_package_version | cut -d '=' -f 2)
-        echo ::set-env name=VERSION::$VERSION  
+        echo "VERSION=$(npm run env | grep npm_package_version | cut -d '=' -f 2)" >> $GITHUB_ENV
     - name: Create Release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      uses: alice-biometrics/release-creator/@v1.0.4
       with:
-        tag_name: v${{ env.VERSION }}
-        release_name: Release v${{ env.VERSION }}
-        body: "[Bumped Version] ${{ env.VERSION }}"
-        draft: false
-        prerelease: false
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        version: v${{ env.VERSION }}
+        repo: 'alexsanro/portfolio'
+        description: "[Bumped Version] ${{ env.VERSION }}"
