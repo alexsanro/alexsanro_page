@@ -28,14 +28,16 @@ img{
 .star:before{
     content: url('/assets/star.svg');
     vertical-align: -0.125em;
-    margin-left: 10px;
     margin-right: 3px;
 }
 
-.watch:before{
-    content: url('/assets/watch.svg');
-    vertical-align: -0.125em;
-    margin-right: 3px;
+.watch{
+    margin-right: 10px;
+    &::before{
+        content: url('/assets/watch.svg');
+        vertical-align: -0.125em;
+        margin-right: 3px;
+    }
 }
 
 .project_card{

@@ -20,10 +20,8 @@ export class ProjectsComponent implements OnInit {
     this.json_language_colors.subscribe(
       (data) => { // Success
         this.languages_colors = data;
-        console.log(data)
       },
       (error) => {
-        console.log(error)
         this.languages_colors = -1;
       }
     );
@@ -33,10 +31,9 @@ export class ProjectsComponent implements OnInit {
     this.http.get("https://api.github.com/users/alexsanro/repos").subscribe(
       (data) => { // Success
         this.repos = data;
-        console.log(data)
+
       },
       (error) => {
-        console.log(error)
         this.repos = -1;
       }
     );
