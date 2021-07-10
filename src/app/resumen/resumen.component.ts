@@ -58,7 +58,7 @@ export class ResumenComponent implements OnInit {
   }
 
   get skills(): Observable<any> {
-    return this.http.get('assets/skills.json');
+    return this.http.get('assets/data/skills.json');
   }
 
 }

@@ -26,7 +26,7 @@ img{
 }
 
 .star:before{
-    content: url('/assets/star.svg');
+    content: url('/assets/icons/star.svg');
     vertical-align: -0.125em;
     margin-right: 3px;
 }
@@ -34,7 +34,7 @@ img{
 .watch{
     margin-right: 10px;
     &::before{
-        content: url('/assets/watch.svg');
+        content: url('/assets/icons/watch.svg');
         vertical-align: -0.125em;
         margin-right: 3px;
     }

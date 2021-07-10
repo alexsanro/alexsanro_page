@@ -54,10 +54,10 @@
             <div style="margin-top: 40px;" class="row" id="skills">
                 <div *ngFor="let skill of jsonSkills"
                     class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 skill-margin">
-                    <a href="#" class="nes-badge is-icon">
+                    <span class="nes-badge is-icon">
                         <span class="is-{{skill.percentage}} porcentaje">{{skill.value}}%</span>
                         <span class="is-{{skill.tecnology}} tecnologia">{{skill.name}}</span>
-                    </a>
+                    </span>
                 </div>
             </div>
 

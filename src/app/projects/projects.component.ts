@@ -31,7 +31,6 @@ export class ProjectsComponent implements OnInit {
     this.http.get("https://api.github.com/users/alexsanro/repos").subscribe(
       (data) => { // Success
         this.repos = data;
-
       },
       (error) => {
         this.repos = -1;
@@ -40,7 +39,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   get json_language_colors(): any {
-    return this.http.get('assets/dev_language_colors.json');
+    return this.http.get('assets/data/dev_language_colors.json');
   }
-
 }
