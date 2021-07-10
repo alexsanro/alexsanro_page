@@ -1,5 +1,6 @@
 {
     "name": "alexsanro_portfolio",
+    "postCreateCommand": "npm install",
     "dockerComposeFile": ["docker-compose.yml"],
     "service": "alexsanro_portfolio",
     "workspaceFolder": "/app",
